@@ -12,3 +12,44 @@
 {"message":"\u001b[0mGET /private/usrManager \u001b[36m304 \u001b[0m38.776 ms - -\u001b[0m\n","level":"info"}
 {"message":"\u001b[0mGET /login/logout \u001b[36m302 \u001b[0m9.610 ms - 56\u001b[0m\n","level":"info"}
 {"message":"\u001b[0mGET /login \u001b[32m200 \u001b[0m25.036 ms - 1373\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 20307 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m25.926 ms - 4978\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540472977238},"level":"error","message":{"message":" [25/Oct/2018:13:09:37 +0240] From ::ffff:127.0.0.1 - Method -GET /favicon.ico HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /favicon.ico \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login \u001b[32m200 \u001b[0m10.041 ms - 1373\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mPOST /login \u001b[36m302 \u001b[0m89.537 ms - 82\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private/usrManager \u001b[32m200 \u001b[0m9.841 ms - 3804\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private/chat \u001b[32m200 \u001b[0m5.072 ms - 2362\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540472992099},"level":"error","message":{"message":" [25/Oct/2018:13:09:52 +0240] From ::ffff:127.0.0.1 - Method -GET /private/client.js HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /private/client.js \u001b[33m404 \u001b[0m6.814 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private/chat \u001b[32m200 \u001b[0m4.918 ms - 2369\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473073442},"level":"error","message":{"message":" [25/Oct/2018:13:11:13 +0240] From ::ffff:127.0.0.1 - Method -GET /private/client/client.js HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /private/client/client.js \u001b[33m404 \u001b[0m6.636 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473074174},"level":"error","message":{"message":" [25/Oct/2018:13:11:14 +0240] From ::ffff:127.0.0.1 - Method -GET /private/client/client.js HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /private/client/client.js \u001b[33m404 \u001b[0m8.496 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private/chat \u001b[32m200 \u001b[0m3.861 ms - 2370\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m5.101 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login/logout \u001b[36m302 \u001b[0m1.518 ms - 56\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login \u001b[32m200 \u001b[0m4.770 ms - 1373\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m3.179 ms - 4925\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473428961},"level":"error","message":{"message":" [25/Oct/2018:13:17:08 +0240] From ::ffff:127.0.0.1 - Method -GET /images/slide1.jpg HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /images/slide1.jpg \u001b[33m404 \u001b[0m6.301 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m3.401 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473458460},"level":"error","message":{"message":" [25/Oct/2018:13:17:38 +0240] From ::ffff:127.0.0.1 - Method -GET /images/slide1.jpg HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /images/slide1.jpg \u001b[33m404 \u001b[0m9.448 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473463528},"level":"error","message":{"message":" [25/Oct/2018:13:17:43 +0240] From ::ffff:127.0.0.1 - Method -GET /images/slide2.jpg HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /images/slide2.jpg \u001b[33m404 \u001b[0m7.454 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473468538},"level":"error","message":{"message":" [25/Oct/2018:13:17:48 +0240] From ::ffff:127.0.0.1 - Method -GET /images/slide3.jpg HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /images/slide3.jpg \u001b[33m404 \u001b[0m6.640 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m2.941 ms - 4928\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540473503744},"level":"error","message":{"message":" [25/Oct/2018:13:18:23 +0240] From ::ffff:127.0.0.1 - Method -GET /images/slider3.jpg HTTP/1.1 500 - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0 "}}
+{"message":"\u001b[0mGET /images/slider3.jpg \u001b[33m404 \u001b[0m5.199 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m3.873 ms - 4929\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m2.674 ms - 4869\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m3.586 ms - 5207\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m4.021 ms - 5286\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m2.666 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m2.435 ms - 5325\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m3.847 ms - 5325\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /login \u001b[36m304 \u001b[0m3.546 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mPOST /login \u001b[32m200 \u001b[0m89.980 ms - 1433\u001b[0m\n","level":"info"}

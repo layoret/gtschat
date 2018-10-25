@@ -4,14 +4,15 @@ var User=require("../models/user.schema");
 var router=express.Router();
 
 
- router.get("/",function(req,res,next){
+ router.get("/*",function(req,res,next){
     console.log("hey");
     if (req.session && req.session.user_id){
         console.log("session: " + req.session.user_id );
-        res.redirect("/");
+        next();
     } else {
         console.log ("sesion no establecida");
-        res.render("login");
+        res.redirect("/login");
+       
     }
 }).get("/usrManager",async (req,res)=>{
     try {
@@ -35,7 +36,7 @@ var router=express.Router();
         res.send("Error");
     }
 }).get("/chat",(req,res)=>{
-    res.render("chat");
+    res.render("chat",{layout:'chat',user:"Julian"});
 });
 /*router.route("/chat/hello").get((req,res)=>{
     res.render("base");

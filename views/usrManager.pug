@@ -1,0 +1,36 @@
+extends ./base.pug
+block miContenido
+    form(method="post", action="/miApp/usrManager")
+        div(class="card")
+            div(class="card-header text-primary").
+                Ingreso de Usuario
+            div(class="card-body")
+                div(class="row")
+                    div(class="col-sm-3")
+                        label(for="usuario") Usuario:
+                    div(class="col")
+                        input(id="usuario", type="text", name="usuario", class="form-control")
+                div(class="row")
+                    div(class="col-sm-3")
+                        label(for="password") Contraseña:
+                    div(class="col")
+                        input(id="password", type="password", name="pwd", class="form-control")
+                div(class="row")
+                    div(class="col-sm-3")
+                        label(for="password2") Repetir Contraseña:
+                    div(class="col")
+                        input(id="password2", type="password", name="pwd2", class="form-control")
+            div(class="card-footer")
+                input(type="submit", value="Agregar", class="btn btn-primary btn-sm")
+    table.table.table-striped
+        thead
+            tr
+                th id
+                th Usuario
+                th Password
+        tbody
+            each u in docs
+                tr
+                    td=u._id
+                    td=u.usuario
+                    td=u.password

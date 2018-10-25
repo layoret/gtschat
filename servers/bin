@@ -1,0 +1,28 @@
+#!/usr/bin/nodejs
+//@contribution: Julian De La Rosa Suncar
+//@Reason: Organizar los servidores para inicializar de manera centralizada
+//----------------------- System boostrap -----------------------------------
+var debug = require('debug')('gtschat');
+var http=require("http");
+var app = require('../app');
+var db=require('../helpers/db');
+
+app.set('port',process.env.PORT || 3000); 
+//var server=http.createServer(app);
+//Verificar que mongodb esta arriba
+var _db=db;
+if(_db){
+console.log(`Node PID:${process.ppid}`);
+var server = app.listen(app.get('port'), function() {
+    
+    //Tenemos que agregar morgan y winston transport para los logs
+   // app.logger.info("App Started", { meta: { message: `Express server with Process ID ${process.ppid} listening on port ${server.address().port}` } });
+    debug(`Express server with Process ID ${process.ppid} listening on port ${server.address().port}`);
+});
+var realtime=require('./realtime.socket')(server,app.sessionManager);
+}
+else{
+    app.logger.warn('mongoose database not connected');
+}
+module.exports=server;
+module.exports=realtime;

@@ -1,0 +1,69 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/.2f1d7bbd0856f19652b99adbd096eaa942d91eb4-audit.json",
+    "files": [
+        {
+            "date": 1540434564253,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-24-22-info.log",
+            "hash": "6197c312b4544fbc8ade330c20bdea8d"
+        },
+        {
+            "date": 1540434564257,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-24-22-error.log",
+            "hash": "f17a4c13be880e66862e9fe3683a4f06"
+        },
+        {
+            "date": 1540436530345,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-24-23-info.log",
+            "hash": "d12dd709b777dc2e1c0e6c39e0a69e29"
+        },
+        {
+            "date": 1540436530348,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-24-23-error.log",
+            "hash": "aa005a3a747e7c217d958063266f3f37"
+        },
+        {
+            "date": 1540440469169,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-00-info.log",
+            "hash": "54f484e2441f4cc56b81a0ea6490efcd"
+        },
+        {
+            "date": 1540440469172,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-00-error.log",
+            "hash": "93dea14400a77a495eca204c4f72407b"
+        },
+        {
+            "date": 1540468113936,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-07-info.log",
+            "hash": "44565af15b9278c54c615e0e5f869a7b"
+        },
+        {
+            "date": 1540468115749,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-07-error.log",
+            "hash": "9e63fffef5bc2e8b1a47e8263730ea6d"
+        },
+        {
+            "date": 1540468830277,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-08-info.log",
+            "hash": "078537274addc66a5d5414c6aedf4d53"
+        },
+        {
+            "date": 1540468832041,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-08-error.log",
+            "hash": "7c89ed6815effc60247100f565172470"
+        },
+        {
+            "date": 1540472410683,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-09-info.log",
+            "hash": "4565c22b5d73de00b7786ed44c534322"
+        },
+        {
+            "date": 1540472410687,
+            "name": "/home/julian/Projects/node-clases-master (1)/GTSChat/logs/bifrost-2018-10-25-09-error.log",
+            "hash": "44d25fd9160dd53221a0da4fcb08d2ad"
+        }
+    ]
+}

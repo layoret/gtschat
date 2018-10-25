@@ -1,0 +1,48 @@
+<form method="post" action="/private/usrManager">
+    <div class="card">
+      <div class="card-header text-primary">Ingreso de Usuario</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="usuario">Usuario:</label>
+          </div>
+          <div class="col">
+            <input class="form-control" id="usuario" type="text" name="usuario"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="password">Contraseña:</label>
+          </div>
+          <div class="col">
+            <input class="form-control" id="password" type="password" name="pwd"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <label for="password2">Repetir Contraseña:</label>
+          </div>
+          <div class="col">
+            <input class="form-control" id="password2" type="password" name="pwd2"/>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <input class="btn btn-primary btn-sm" type="submit" value="Agregar"/>
+      </div>
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Usuario</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+  </table>
+            <!---each u in docs
+                tr
+                    td=u._id
+                    td=u.usuario
+                    td=u.password--->

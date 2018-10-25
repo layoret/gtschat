@@ -1,0 +1,114 @@
+{"meta":{"message":"Express server with Process ID 8302 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 8302 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 8302 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 8302 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 8302 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9050 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9050 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m55.594 ms - 2547\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m55.187 ms - 2546\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540437966325},"level":"error","message":{"message":" [25/Oct/2018:03:26:06 +0240] From ::1 - Method -\"GET /chat HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"meta":{"_date":1540437966328},"level":"error","message":{"message":" [25/Oct/2018:03:26:06 +0240] From ::1 - Method -\"GET /chat HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /chat \u001b[31m500 \u001b[0m12.282 ms - 2404\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private/chat \u001b[32m200 \u001b[0m46.263 ms - 2228\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540437976237},"level":"error","message":{"message":" [25/Oct/2018:03:26:16 +0240] From ::1 - Method -\"GET /miApp/static/client.js HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"meta":{"_date":1540437976238},"level":"error","message":{"message":" [25/Oct/2018:03:26:16 +0240] From ::1 - Method -\"GET /miApp/static/client.js HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /miApp/static/client.js \u001b[31m500 \u001b[0m3.445 ms - 2404\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540437976521},"level":"error","message":{"message":" [25/Oct/2018:03:26:16 +0240] From ::1 - Method -\"GET /miApp/static/client.js HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"meta":{"_date":1540437976522},"level":"error","message":{"message":" [25/Oct/2018:03:26:16 +0240] From ::1 - Method -\"GET /miApp/static/client.js HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /miApp/static/client.js \u001b[31m500 \u001b[0m2.547 ms - 2404\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540437989343},"level":"error","message":{"message":" [25/Oct/2018:03:26:29 +0240] From ::1 - Method -\"GET /private HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"meta":{"_date":1540437989344},"level":"error","message":{"message":" [25/Oct/2018:03:26:29 +0240] From ::1 - Method -\"GET /private HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private \u001b[31m500 \u001b[0m4.400 ms - 2404\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438049120},"level":"error","message":{"message":" [25/Oct/2018:03:27:29 +0240] From ::1 - Method -\"GET /private HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"meta":{"_date":1540438049153},"level":"error","message":{"message":" [25/Oct/2018:03:27:29 +0240] From ::1 - Method -\"GET /private HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private \u001b[31m500 \u001b[0m43.118 ms - 260\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438076639},"level":"error","message":{"message":" [25/Oct/2018:03:27:56 +0240] From ::1 - Method -\"GET /private HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private \u001b[33m404 \u001b[0m10.483 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438179085},"level":"error","message":{"message":" [25/Oct/2018:03:29:39 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m23.115 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438342598},"level":"error","message":{"message":" [25/Oct/2018:03:32:22 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m41.371 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m26.254 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438396763},"level":"error","message":{"message":" [25/Oct/2018:03:33:16 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m41.695 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438425875},"level":"error","message":{"message":" [25/Oct/2018:03:33:45 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m42.598 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438561030},"level":"error","message":{"message":" [25/Oct/2018:03:36:01 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m49.765 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438567197},"level":"error","message":{"message":" [25/Oct/2018:03:36:07 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m8.334 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438587265},"level":"error","message":{"message":" [25/Oct/2018:03:36:27 +0240] From ::1 - Method -\"GET /private/ HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/ \u001b[33m404 \u001b[0m41.794 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET /private/ \u001b[32m200 \u001b[0m47.203 ms - 3654\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET /private/ \u001b[36m302 \u001b[0m8.933 ms - 52\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438696282},"level":"error","message":{"message":" [25/Oct/2018:03:38:16 +0240] From ::1 - Method -\"GET /private/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/main \u001b[33m404 \u001b[0m43.587 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438714751},"level":"error","message":{"message":" [25/Oct/2018:03:38:34 +0240] From ::1 - Method -\"GET /private/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/main \u001b[33m404 \u001b[0m42.666 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438717494},"level":"error","message":{"message":" [25/Oct/2018:03:38:37 +0240] From ::1 - Method -\"GET /private/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /private/main \u001b[33m404 \u001b[0m8.094 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[36m302 \u001b[0m7.794 ms - 52\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438727652},"level":"error","message":{"message":" [25/Oct/2018:03:38:47 +0240] From ::1 - Method -\"GET /base HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /base \u001b[33m404 \u001b[0m5.413 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540438739729},"level":"error","message":{"message":" [25/Oct/2018:03:38:59 +0240] From ::1 - Method -\"GET /base HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /base \u001b[33m404 \u001b[0m47.089 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[36m302 \u001b[0m11.679 ms - 46\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m16.576 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET /private \u001b[36m302 \u001b[0m6.537 ms - 46\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m46.885 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[32m200 \u001b[0m57.718 ms - 2831\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m31.675 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438985166},"level":"error","message":{"message":" [25/Oct/2018:03:43:05 +0240] From ::1 - Method -\"GET /favicon.ico HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /favicon.ico \u001b[33m404 \u001b[0m16.611 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[36m304 \u001b[0m7.293 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540438997262},"level":"error","message":{"message":" [25/Oct/2018:03:43:17 +0240] From ::1 - Method -\"POST /login HTTP/1.1\" application/x-www-form-urlencoded - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mPOST /login \u001b[33m404 \u001b[0m14.931 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540439184194},"level":"error","message":{"message":" [25/Oct/2018:03:46:24 +0240] From ::1 - Method -\"POST /login HTTP/1.1\" application/x-www-form-urlencoded - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mPOST /login \u001b[33m404 \u001b[0m49.265 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[36m304 \u001b[0m15.091 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540439206061},"level":"error","message":{"message":" [25/Oct/2018:03:46:46 +0240] From ::1 - Method -\"POST /login HTTP/1.1\" application/x-www-form-urlencoded - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mPOST /login \u001b[33m404 \u001b[0m12.629 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mPOST /login \u001b[32m200 \u001b[0m90.867 ms - 13\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[36m302 \u001b[0m7.349 ms - 46\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m48.614 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m31.693 ms - 2201\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m9.955 ms - -\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET /login/logout \u001b[36m302 \u001b[0m7.321 ms - 52\u001b[0m\n","level":"info"}
+{"meta":{"status":404,"_date":1540439675289},"level":"error","message":{"message":" [25/Oct/2018:03:54:35 +0240] From ::1 - Method -\"GET /login/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /login/main \u001b[33m404 \u001b[0m39.183 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540439688535},"level":"error","message":{"message":" [25/Oct/2018:03:54:48 +0240] From ::1 - Method -\"GET /login/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /login/main \u001b[33m404 \u001b[0m40.572 ms - 9\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540439705520},"level":"error","message":{"message":" [25/Oct/2018:03:55:05 +0240] From ::1 - Method -\"GET /login/main HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /login/main \u001b[33m404 \u001b[0m32.731 ms - 9\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /private \u001b[32m200 \u001b[0m12.948 ms - 2831\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mPOST /login \u001b[32m200 \u001b[0m88.396 ms - 13\u001b[0m\n","level":"info"}
+{"meta":{"_date":1540439729122},"level":"error","message":{"message":" [25/Oct/2018:03:55:29 +0240] From ::1 - Method -\"GET /login/logout HTTP/1.1\" 500 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 "}}
+{"message":"\u001b[0mGET /login/logout \u001b[31m500 \u001b[0m8.290 ms - 128\u001b[0m\n","level":"info"}
+{"meta":{"message":"Express server with Process ID 9218 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":"\u001b[0mGET /login/logout \u001b[32m200 \u001b[0m30.455 ms - 2201\u001b[0m\n","level":"info"}

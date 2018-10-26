@@ -1,0 +1,164 @@
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540519356857},"level":"error","message":{"message":" [26/Oct/2018:02:02:36 +0240] From undefined - Method -undefined undefined HTTP/undefined [object Object]} "}}
+{"message":" [26/Oct/2018:02:02:36 +0240] From ::ffff:127.0.0.1 - Method -GET /private/chat/s HTTP/1.1 function morgan (format, options) {\n  var fmt = format\n  var opts = options || {}\n\n  if (format && typeof format === 'object') {\n    opts = format\n    fmt = opts.format || 'default'\n\n    // smart deprecation message\n    deprecate('morgan(options): use morgan(' + (typeof fmt === 'string' ? JSON.stringify(fmt) : 'format') + ', options) instead')\n  }\n\n  if (fmt === undefined) {\n    deprecate('undefined format: specify a format')\n  }\n\n  // output on request instead of response\n  var immediate = opts.immediate\n\n  // check if log entry should be skipped\n  var skip = opts.skip || false\n\n  // format function\n  var formatLine = typeof fmt !== 'function'\n    ? getFormatFunction(fmt)\n    : fmt\n\n  // stream\n  var buffer = opts.buffer\n  var stream = opts.stream || process.stdout\n\n  // buffering support\n  if (buffer) {\n    deprecate('buffer option')\n\n    // flush interval\n    var interval = typeof buffer !== 'number'\n      ? DEFAULT_BUFFER_DURATION\n      : buffer\n\n    // swap the stream\n    stream = createBufferStream(stream, interval)\n  }\n\n  return function logger (req, res, next) {\n    // request data\n    req._startAt = undefined\n    req._startTime = undefined\n    req._remoteAddress = getip(req)\n\n    // response data\n    res._startAt = undefined\n    res._startTime = undefined\n\n    // record request start\n    recordStartTime.call(req)\n\n    function logRequest () {\n      if (skip !== false && skip(req, res)) {\n        debug('skip request')\n        return\n      }\n\n      var line = formatLine(morgan, req, res)\n\n      if (line == null) {\n        debug('skip line')\n        return\n      }\n\n      debug('log request')\n      stream.write(line + '\\n')\n    };\n\n    if (immediate) {\n      // immediate log\n      logRequest()\n    } else {\n      // record response start\n      onHeaders(res, recordStartTime)\n\n      // log when response finished\n      onFinished(res, logRequest)\n    }\n\n    next()\n  }\n}} \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:04:31 +0240] From ::1 - Method -POST - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:05:15 +0240] From ::1 - Method -POST /private/chat HTTP/1.1 application/x-www-form-urlencoded - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 \n","level":"info"}
+{"message":" [26/Oct/2018:02:05:29 +0240] From ::1 - Method -GET /private/chat/s HTTP/1.1 unknown - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540519552462},"level":"error","message":{"message":" [26/Oct/2018:02:05:52 +0240] From undefined - Method -undefined - 500 "}}
+{"message":" [26/Oct/2018:02:05:52 +0240] From ::1 - Method -GET - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540519623915},"level":"error","message":{"message":" [26/Oct/2018:02:07:03 +0240] From ::1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:07:03 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:09:19 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:09:35 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:16:58 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:19:49 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:19:55 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:20:04 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:20:12 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:21:23 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:21:28 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:21:35 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:21:43 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:24:02 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:24:51 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:25:40 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:26:49 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:26:59 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:27:27 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:27:40 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:27:49 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540520950023},"level":"error","message":{"message":" [26/Oct/2018:02:29:10 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:29:10 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521027429},"level":"error","message":{"message":" [26/Oct/2018:02:30:27 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:30:27 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521030726},"level":"error","message":{"message":" [26/Oct/2018:02:30:30 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:30:30 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:32:03 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:32:03 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:32:10 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:32:20 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:32:29 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:32:40 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:33:51 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:33:51 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521237546},"level":"error","message":{"message":" [26/Oct/2018:02:33:57 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:33:57 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"_date":1540521320504},"level":"error","message":{"message":" [26/Oct/2018:02:35:20 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:35:20 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"_date":1540521322870},"level":"error","message":{"message":" [26/Oct/2018:02:35:22 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:35:22 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:35:54 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:35:54 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:35:58 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:01 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:01 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:01 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:04 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:04 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:06 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:36:06 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:36:20 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521386568},"level":"error","message":{"message":" [26/Oct/2018:02:36:26 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:36:26 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521445465},"level":"error","message":{"message":" [26/Oct/2018:02:37:25 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:37:25 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: Cannot set headers after they are sent to the client\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:170:12)\n    at done (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:1004:10)\n    at Immediate.<anonymous> (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express-handlebars/lib/utils.js:26:13)\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:170:12)\n    at done (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:1004:10)\n    at Immediate.<anonymous> (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express-handlebars/lib/utils.js:26:13)\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)","exception":true,"date":"Thu Oct 25 2018 22:37:25 GMT-0400 (Eastern Daylight Time)","process":{"pid":7777,"uid":1000,"gid":1000,"cwd":"/home/julian/Projects/node-clases-master (1)/GTSChat","execPath":"/usr/local/bin/node","version":"v10.12.0","argv":["/usr/local/bin/node","./servers/bin"],"memoryUsage":{"rss":81387520,"heapTotal":66093056,"heapUsed":26068304,"external":18404051}},"os":{"loadavg":[1.189453125,1.06884765625,1.00830078125],"uptime":8761},"trace":[{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":470,"method":"setHeader","native":false},{"column":10,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"ServerResponse.header (/home/julian/Projects/node-clases-master","line":767,"method":"header (/home/julian/Projects/node-clases-master","native":false},{"column":12,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"ServerResponse.send (/home/julian/Projects/node-clases-master","line":170,"method":"send (/home/julian/Projects/node-clases-master","native":false},{"column":10,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"done (/home/julian/Projects/node-clases-master","line":1004,"method":null,"native":false},{"column":13,"file":"1)/GTSChat/node_modules/express-handlebars/lib/utils.js","function":"Immediate.<anonymous> (/home/julian/Projects/node-clases-master","line":26,"method":"<anonymous> (/home/julian/Projects/node-clases-master","native":false},{"column":18,"file":"timers.js","function":"runCallback","line":705,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":676,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate","line":658,"method":null,"native":false}]}
+{"meta":{},"level":"error","message":"Error"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:38:10 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521490546},"level":"error","message":{"message":" [26/Oct/2018:02:38:10 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:38:10 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521495947},"level":"error","message":{"message":" [26/Oct/2018:02:38:15 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:38:15 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521498299},"level":"error","message":{"message":" [26/Oct/2018:02:38:18 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:38:18 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521633738},"level":"error","message":{"message":" [26/Oct/2018:02:40:33 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:40:33 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521719150},"level":"error","message":{"message":" [26/Oct/2018:02:41:59 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:41:59 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: Cannot set headers after they are sent to the client\nError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:170:12)\n    at done (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:1004:10)\n    at Immediate.<anonymous> (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express-handlebars/lib/utils.js:26:13)\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:767:10)\n    at ServerResponse.send (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:170:12)\n    at done (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express/lib/response.js:1004:10)\n    at Immediate.<anonymous> (/home/julian/Projects/node-clases-master (1)/GTSChat/node_modules/express-handlebars/lib/utils.js:26:13)\n    at runCallback (timers.js:705:18)\n    at tryOnImmediate (timers.js:676:5)\n    at processImmediate (timers.js:658:5)","exception":true,"date":"Thu Oct 25 2018 22:41:59 GMT-0400 (Eastern Daylight Time)","process":{"pid":7953,"uid":1000,"gid":1000,"cwd":"/home/julian/Projects/node-clases-master (1)/GTSChat","execPath":"/usr/local/bin/node","version":"v10.12.0","argv":["/usr/local/bin/node","./servers/bin"],"memoryUsage":{"rss":71487488,"heapTotal":63995904,"heapUsed":25545368,"external":18499946}},"os":{"loadavg":[0.83984375,0.96044921875,0.98828125],"uptime":9034},"trace":[{"column":11,"file":"_http_outgoing.js","function":"ServerResponse.setHeader","line":470,"method":"setHeader","native":false},{"column":10,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"ServerResponse.header (/home/julian/Projects/node-clases-master","line":767,"method":"header (/home/julian/Projects/node-clases-master","native":false},{"column":12,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"ServerResponse.send (/home/julian/Projects/node-clases-master","line":170,"method":"send (/home/julian/Projects/node-clases-master","native":false},{"column":10,"file":"1)/GTSChat/node_modules/express/lib/response.js","function":"done (/home/julian/Projects/node-clases-master","line":1004,"method":null,"native":false},{"column":13,"file":"1)/GTSChat/node_modules/express-handlebars/lib/utils.js","function":"Immediate.<anonymous> (/home/julian/Projects/node-clases-master","line":26,"method":"<anonymous> (/home/julian/Projects/node-clases-master","native":false},{"column":18,"file":"timers.js","function":"runCallback","line":705,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":676,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate","line":658,"method":null,"native":false}]}
+{"meta":{},"level":"error","message":"Error"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:02:42:40 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521760744},"level":"error","message":{"message":" [26/Oct/2018:02:42:40 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:42:40 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:42:55 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:42:58 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:42:58 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:43:06 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540521798710},"level":"error","message":{"message":" [26/Oct/2018:02:43:18 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:43:18 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521826262},"level":"error","message":{"message":" [26/Oct/2018:02:43:46 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:43:46 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540521956210},"level":"error","message":{"message":" [26/Oct/2018:02:45:56 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:45:56 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522047689},"level":"error","message":{"message":" [26/Oct/2018:02:47:27 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:47:27 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 6357 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540522084831},"level":"error","message":{"message":" [26/Oct/2018:02:48:04 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:48:04 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522108631},"level":"error","message":{"message":" [26/Oct/2018:02:48:28 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:48:28 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522135010},"level":"error","message":{"message":" [26/Oct/2018:02:48:55 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:48:55 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522227026},"level":"error","message":{"message":" [26/Oct/2018:02:50:27 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:50:27 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:50:29 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:50:35 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:50:43 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:50:43 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:02:50:45 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"message":"Express server with Process ID 8774 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"status":404,"_date":1540522493641},"level":"error","message":{"message":" [26/Oct/2018:02:54:53 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:54:53 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522493696},"level":"error","message":{"message":" [26/Oct/2018:02:54:53 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:54:53 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522493892},"level":"error","message":{"message":" [26/Oct/2018:02:54:53 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:54:53 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522523400},"level":"error","message":{"message":" [26/Oct/2018:02:55:23 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:23 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522523432},"level":"error","message":{"message":" [26/Oct/2018:02:55:23 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:23 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522523646},"level":"error","message":{"message":" [26/Oct/2018:02:55:23 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:23 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522525020},"level":"error","message":{"message":" [26/Oct/2018:02:55:25 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:25 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522525050},"level":"error","message":{"message":" [26/Oct/2018:02:55:25 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:25 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522525135},"level":"error","message":{"message":" [26/Oct/2018:02:55:25 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:25 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522545824},"level":"error","message":{"message":" [26/Oct/2018:02:55:45 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:55:45 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522585280},"level":"error","message":{"message":" [26/Oct/2018:02:56:25 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:56:25 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522616141},"level":"error","message":{"message":" [26/Oct/2018:02:56:56 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:56:56 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522640293},"level":"error","message":{"message":" [26/Oct/2018:02:57:20 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:57:20 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522670049},"level":"error","message":{"message":" [26/Oct/2018:02:57:50 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:57:50 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522685948},"level":"error","message":{"message":" [26/Oct/2018:02:58:05 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:58:05 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522738745},"level":"error","message":{"message":" [26/Oct/2018:02:58:58 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:58:58 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540522778512},"level":"error","message":{"message":" [26/Oct/2018:02:59:38 +0240] From ::ffff:127.0.0.1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:02:59:38 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}

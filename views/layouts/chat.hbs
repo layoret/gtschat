@@ -3,7 +3,14 @@
      {{>common-header}}
 </head>
 <body>
+    
     <p>hola {{user}}</p>
     {{{body}}}
+    <form method="post" action="/private/chat">
+        <input type="text" name="mensaje" id="mensaje" aria-rowcount="5"/>
+        <input type="submit">Enviar</input>
+        <textarea class="form-control" rows="5" id="message">{{message}}</textarea>
+    </form>
+
 </body>
 </html>

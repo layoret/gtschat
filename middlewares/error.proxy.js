@@ -6,7 +6,8 @@ var loggermw = function(err, req, res, next) {
     res.render('error', {
         layout: "error",
         message: err.message,
-        error: err
+        error: err.status
     });
+  
 }
 module.exports = loggermw;

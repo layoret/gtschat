@@ -1,1 +1,21 @@
-{{message}}
+<html>
+    <head>
+        {{>common-header}}
+        <link href="/css/error.css" rel="stylesheet"/>
+        <title>{{error}}</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="error-card">
+                    {{message}} {{error}}
+            </div>
+            <span> <a href="/">Volver al inicio</a></span>
+        </div>
+      
+        
+   
+    </body>
+
+
+</html>
+

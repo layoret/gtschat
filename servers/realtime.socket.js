@@ -1,17 +1,23 @@
+
 module.exports = function (server, session){
-    var io=require("socket.io")(server);
-    
-   io.use(function(socket,next){
-        console.log("oyendo");
+  var chatserver=require("socket.io")(server);
+  var redis=require('redis');
+  var client=redis.createClient();
+  client.subscribe("chat");
+   chatserver.use(function(socket,next){
+        console.log("Websocket inicializado");
         session(socket.request ,socket.request.res ,next);
     });
-
-    io.on('connection', function (socket) {
+    client.on("message",(channel,message)=>{
+      //console.log("Websocket:"+channel+" "+message);
+      //client.publish("chat","onNewMessage");
+      chatserver.emit("newMessage",{mensaje:message});
+    });
+    chatserver.on('connection', function (socket) {
         console.log('connected ' + socket.request.session.user_id);
-        socket.emit('news', { hello: socket.request.session.id });
-        socket.on('my other event', function (data) {
-          console.log(data);
-        });
+        socket.emit("newMessage",{mensaje:"Bienvenido"});
+        
       });
+      
     console.log("WEB SOCKET INICIALIZADO");
 }   

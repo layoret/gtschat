@@ -2,13 +2,19 @@
 var express=require("express");
 var User=require("../models/user.schema");
 var router=express.Router();
+var redis=require("redis");
+var clientRedis=redis.createClient();
 
-
- router.get("/*",function(req,res,next){
+ router.get("/",function(req,res,next){
     console.log("hey");
     if (req.session && req.session.user_id){
         console.log("session: " + req.session.user_id );
-        next();
+        console.log(req.baseUrl);
+      // if(req.url!=="private")
+       next();
+      
+          //  res.redirect("/");
+ 
     } else {
         console.log ("sesion no establecida");
         res.redirect("/login");
@@ -37,6 +43,11 @@ var router=express.Router();
     }
 }).get("/chat",(req,res)=>{
     res.render("chat",{layout:'chat',user:"Julian"});
+}).post("/chat",(req,res,next)=>{
+    //res.render("chat",{layout:'chat',user:"Julian"});
+    clientRedis.publish("chat",req.body.mensaje);
+    console.log(req.body.mensaje);
+    res.render("chat",{layout:'chat',message:req.body.mensaje});
 });
 /*router.route("/chat/hello").get((req,res)=>{
     res.render("base");

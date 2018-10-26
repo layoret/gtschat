@@ -1,0 +1,6 @@
+{"meta":{"message":"Express server with Process ID 2994 listening on port 3000"},"level":"info","message":"App Started"}
+{"meta":{"message":"Express server with Process ID 2994 listening on port 3000"},"level":"info","message":"App Started"}
+{"message":" [26/Oct/2018:23:54:47 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"meta":{"status":404,"_date":1540598088741},"level":"error","message":{"message":" [26/Oct/2018:23:54:48 +0240] From ::1 - Method -GET - 500 "}}
+{"message":" [26/Oct/2018:23:54:48 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}
+{"message":" [26/Oct/2018:23:54:50 +0240] From undefined - Method -function getMethodToken (req) {\n  return req.method\n} - 500 \n","level":"info"}

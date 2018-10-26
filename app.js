@@ -19,6 +19,7 @@ var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
 var app = module.exports = express();
 var _server = http.createServer(app);
+var clientRedis=require("redis-client");
 app.logger=logger;
 app.engine('hbs', hbs({
     extname: 'hbs',
@@ -54,11 +55,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(morgan('dev', { stream: logger.stream }));
+app.use(morgan(logger.combinedFormat2, { stream: logger.stream }));
 
-
-app.use("/private",secRouter);
 app.use("/",mainRouter);
+app.use("/private",secRouter);
 app.use("/login",controlRouter);
 
 //app.use("/miApp/static",express.static("./estaticos"));

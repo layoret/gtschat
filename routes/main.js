@@ -6,5 +6,7 @@ router.get('/',(req,res,)=>{
    
     res.render('index',{layout:'default'});
 
-})
+}).get('/chat',(req,res)=>{
+    res.redirect("/private/chat");
+});
 module.exports = router;

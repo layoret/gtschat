@@ -43,7 +43,7 @@ var errorfile = new winston.transports.DailyRotateFile({
 var wconsole = new winston.transports.Console({
     level: 'debug',
     handleExceptions: true,
-    json: false,
+    json: true,
     colorize: false
 })
 errorfile.on("rotate", function(oldFilename, newFilename) {
@@ -71,11 +71,19 @@ logger.combinedFormat = function(err, req, res) {
     500} - ${req.headers["user-agent"]}`;
 };
 // create a format method for winston, it is similar with 'combined' format in morgan
-logger.combinedFormat2 = function(req, res) {
+logger.combinedFormat2 = function(err,req, res) {
     // :remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"
+    if(!err){
     return ` [${clfDate(
         new Date()
       )}] From ${req.ip} - Method -${req.method} ${req.originalUrl} HTTP/${req.httpVersion} ${req.headers["content-type"] ||
-    "500"} - ${req.headers["user-agent"]} `;
+    "unknown"} - ${req.headers["user-agent"]} `;
+    }
+    else{
+        return ` [${clfDate(
+            new Date()
+          )}] From ${err.ip} - Method -${err.method} - ${err.message || "500"} `;
+        }
+    
 };
 module.exports = logger;
